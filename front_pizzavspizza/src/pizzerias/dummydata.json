@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "pizzeria": "The empire pizzeria",
+    "city": "New York"
+  },
+  {
+    "id": 2,
+    "pizzeria": "The Hot pizzeria",
+    "city": "Chicago"
+  },
+  {
+    "id": 3,
+    "pizzeria": "The sad pizzeria",
+    "city": "Los Angeles"
+  }
+]
