@@ -1,7 +1,7 @@
 import React from 'react';
-import DummyData from './dummydata.json'
 import PizzaDetail from './pizzeriadetail'
 import axios from 'axios'
+import PizzaForm from "./pizzeriaform";
 
 const HOST_API = 'http://127.0.0.1:8000/api/v1/'
 
@@ -51,6 +51,7 @@ class Pizzalist extends React.Component {
                 {this.state.showComponent ? (
                     <PizzaDetail pizzariaDetail={this.state.pizzeria}/>
                 ) : null}
+                <PizzaForm/>
             </div>
         )
     }

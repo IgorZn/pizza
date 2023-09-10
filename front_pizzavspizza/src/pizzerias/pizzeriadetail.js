@@ -2,8 +2,11 @@ import React from 'react';
 
 class PizzeriaDetail extends React.Component {
     render() {
+        /*
+        *  pizzariaDetail - это просто ключ аргумента, который мы передаем в 'PizzeriaDetail'
+        *  pizzariaDetail={this.state.pizzeria}
+        * */
         const p = this.props.pizzariaDetail
-        console.log('this.props.p', p)
         return(
             <div style={{ color: "yellow", border: "1px solid yellow" }}>
                 <h4 key={p.id}>{p.pizzeria_name}</h4>
