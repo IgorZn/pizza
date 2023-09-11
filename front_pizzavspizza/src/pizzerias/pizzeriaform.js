@@ -30,17 +30,7 @@ class PizzaForm extends React.Component {
 
         console.log('handleSubmit>>>', this.state.pizzeria_name);
         axios
-            .post("http://127.0.0.1:8000/api/v1/", {
-                pizzeria_name: this.state.pizzeria_name,
-                street: this.state.street,
-                city: this.state.city,
-                state: this.state.state,
-                zip_code: this.state.zip_code,
-                website: this.state.website,
-                phone_number: this.state.phone_number,
-                description: this.state.description,
-                email: this.state.email,
-            })
+            .post("http://127.0.0.1:8000/api/v1/", this.state)
             .then(response => console.log(response))
             .catch(error => console.log(error));
     }
