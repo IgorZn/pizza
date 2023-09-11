@@ -7,6 +7,7 @@ class PizzaUpdate extends React.Component {
         this.state = {
             obj_to_update: this.props.pizzariaUpdate,
             value: this.props.pizzariaUpdate.description,
+            auth: this.props.auth
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -21,12 +22,7 @@ class PizzaUpdate extends React.Component {
         axios.patch(
             this.state.obj_to_update.url,
             {description: this.state.value},
-            {
-                auth: {
-                    username: 'igorzn',
-                    password: 'AdminGuru'
-                }
-            })
+            { auth: this.state.auth })
             .then(res => console.log(res))
             .catch(err => console.log(err));
     }
